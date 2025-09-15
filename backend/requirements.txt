@@ -1,0 +1,5 @@
+Flask
+google-cloud-aiplatform
+mysql-connector-python
+python-dotenv
+Flask-Cors
