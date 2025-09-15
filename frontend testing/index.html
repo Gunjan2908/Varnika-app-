@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varnika - API Tester</title>
+    <style>
+        body { font-family: sans-serif; margin: 2rem; }
+        h1 { text-align: center; }
+        form { display: flex; flex-direction: column; max-width: 500px; margin: 0 auto; }
+        label, textarea, button { margin-top: 1rem; }
+        #result { white-space: pre-wrap; margin-top: 2rem; padding: 1rem; border: 1px solid #ccc; background: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <h1>Test Your Backend API</h1>
+    <form id="content-form">
+        <label for="product_type">Product Type:</label>
+        <input type="text" id="product_type" name="product_type" value="hand-painted vase">
+
+        <label for="keywords">Keywords:</label>
+        <textarea id="keywords" name="keywords" rows="4">floral design, ceramic, handmade</textarea>
+
+        <button type="submit">Send to Backend</button>
+    </form>
+
+    <div id="result">
+        Generated content will appear here.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

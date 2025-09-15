@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varnika - Authentic Indian Handicrafts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <h1 class="logo">Varnika</h1>
+                <button class="btn btn-outline" onclick="showLogin()">Sign In</button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">
+                        Discover Authentic
+                        <span class="highlight">Indian Handicrafts</span>
+                    </h2>
+                    <p class="hero-description">
+                        Varnika connects you with skilled artisans and their beautiful handcrafted treasures. 
+                        Experience the rich heritage of Indian craftsmanship.
+                    </p>
+                    <button class="btn btn-primary btn-large" onclick="showLogin()">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Authentic Crafts</h3>
+                        <p>Discover genuine handcrafted items made by skilled artisans using traditional techniques.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Support Artisans</h3>
+                        <p>Directly support local craftspeople and help preserve traditional art forms.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⭐</div>
+                        <h3>Quality Assured</h3>
+                        <p>Every piece is carefully curated for quality and authenticity.</p>
+                    </div>
+                </div>
+
+                <!-- Sample Products Preview -->
+                <div class="preview-section">
+                    <h3 class="section-title">Featured Handicrafts</h3>
+                    <div class="preview-grid">
+                        <div class="preview-card">
+                            <img src="https://images.unsplash.com/photo-1716876995651-1ff85b65a6d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBoYW5kaWNyYWZ0cyUyMHBvdHRlcnl8ZW58MXx8fHwxNzU3NTAwNDEwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Traditional Pottery">
+                            <div class="preview-content">
+                                <h4>Traditional Pottery</h4>
+                                <p>Handcrafted clay vessels</p>
+                            </div>
+                        </div>
+                        <div class="preview-card">
+                            <img src="https://images.unsplash.com/photo-1632726733402-4a059a476028?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjB0ZXh0aWxlcyUyMGhhbmRpY3JhZnRzfGVufDF8fHx8MTc1NzU3NDkwMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Textile Crafts">
+                            <div class="preview-content">
+                                <h4>Textile Arts</h4>
+                                <p>Beautiful woven fabrics</p>
+                            </div>
+                        </div>
+                        <div class="preview-card">
+                            <img src="https://images.unsplash.com/photo-1738508117775-883afd3d99da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBoYW5kaWNyYWZ0cyUyMGNhcnZpbmd8ZW58MXx8fHwxNzU3NTc0OTA0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Wood Carvings">
+                            <div class="preview-content">
+                                <h4>Wood Carvings</h4>
+                                <p>Intricate wooden art</p>
+                            </div>
+                        </div>
+                        <div class="preview-card">
+                            <img src="https://images.unsplash.com/photo-1653227907864-560dce4c252d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBqZXdlbHJ5JTIwaGFuZGljcmFmdHN8ZW58MXx8fHwxNzU3NTc0OTA4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Traditional Jewelry">
+                            <div class="preview-content">
+                                <h4>Traditional Jewelry</h4>
+                                <p>Handcrafted ornaments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <button class="btn btn-primary btn-large" onclick="showLogin()">
+                        Explore All Products
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <h3 class="footer-title">Varnika</h3>
+                <p class="footer-text">Preserving Indian Heritage Through Handicrafts</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Main App (after login) -->
+    <div id="main-app" class="page">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="nav-left">
+                        <h1 class="nav-logo">Varnika</h1>
+                        <div class="nav-links desktop-only">
+                            <button class="nav-link active" onclick="showPage('products')" data-page="products">
+                                <span class="nav-icon">📦</span>
+                                <span>Products</span>
+                            </button>
+                            <button class="nav-link" onclick="showPage('add-product')" data-page="add-product">
+                                <span class="nav-icon">➕</span>
+                                <span>Add Product</span>
+                            </button>
+                            <button class="nav-link" onclick="showPage('about')" data-page="about">
+                                <span class="nav-icon">ℹ️</span>
+                                <span>About</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" onclick="logout()">
+                        <span>🚪</span>
+                        Logout
+                    </button>
+                </div>
+                
+                <!-- Mobile Navigation -->
+                <div class="mobile-nav mobile-only">
+                    <button class="nav-link active" onclick="showPage('products')" data-page="products">
+                        <span class="nav-icon">📦</span>
+                        <span>Products</span>
+                    </button>
+                    <button class="nav-link" onclick="showPage('add-product')" data-page="add-product">
+                        <span class="nav-icon">➕</span>
+                        <span>Add Product</span>
+                    </button>
+                    <button class="nav-link" onclick="showPage('about')" data-page="about">
+                        <span class="nav-icon">ℹ️</span>
+                        <span>About</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Products Page -->
+        <div id="products-page" class="app-page active">
+            <div class="container">
+                <div class="page-header">
+                    <h2>Our Handicrafts</h2>
+                    
+                    <!-- Search and Filter -->
+                    <div class="search-filter">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search products..." oninput="filterProducts()">
+                            <span class="search-icon">🔍</span>
+                        </div>
+                        <div class="filter-tags">
+                            <button class="filter-tag active" onclick="filterByCategory('all')" data-category="all">All</button>
+                            <button class="filter-tag" onclick="filterByCategory('pottery')" data-category="pottery">Pottery</button>
+                            <button class="filter-tag" onclick="filterByCategory('textiles')" data-category="textiles">Textiles</button>
+                            <button class="filter-tag" onclick="filterByCategory('jewelry')" data-category="jewelry">Jewelry</button>
+                            <button class="filter-tag" onclick="filterByCategory('woodwork')" data-category="woodwork">Woodwork</button>
+                            <button class="filter-tag" onclick="filterByCategory('metalwork')" data-category="metalwork">Metalwork</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div id="products-grid" class="products-grid">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+
+                <div id="no-products" class="no-products" style="display: none;">
+                    <p>No products found matching your criteria.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Product Page -->
+        <div id="add-product-page" class="app-page">
+            <div class="container">
+                <h2>Add New Product</h2>
+                
+                <form id="add-product-form" class="add-product-form">
+                    <div class="form-grid">
+                        <!-- Product Details -->
+                        <div class="form-section">
+                            <h3>Product Details</h3>
+                            <div class="form-group">
+                                <label for="product-name">Product Name *</label>
+                                <input type="text" id="product-name" placeholder="Enter product name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-description">Description *</label>
+                                <textarea id="product-description" placeholder="Describe your product..." rows="4" required></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="product-price">Price *</label>
+                                    <input type="text" id="product-price" placeholder="₹2,500" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="product-category">Category *</label>
+                                    <select id="product-category" required>
+                                        <option value="">Select category</option>
+                                        <option value="pottery">Pottery</option>
+                                        <option value="textiles">Textiles</option>
+                                        <option value="jewelry">Jewelry</option>
+                                        <option value="woodwork">Woodwork</option>
+                                        <option value="metalwork">Metalwork</option>
+                                        <option value="paintings">Paintings</option>
+                                        <option value="sculptures">Sculptures</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="product-artisan">Artisan Name *</label>
+                                <input type="text" id="product-artisan" placeholder="Enter artisan name" required>
+                            </div>
+                        </div>
+
+                        <!-- Image Upload -->
+                        <div class="form-section">
+                            <h3>Product Image</h3>
+                            <div class="image-upload">
+                                <div id="image-preview" class="image-preview" style="display: none;">
+                                    <img id="preview-img" src="" alt="Preview">
+                                    <button type="button" class="remove-image" onclick="removeImage()">Remove Image</button>
+                                </div>
+                                <div id="upload-area" class="upload-area">
+                                    <div class="upload-content">
+                                        <span class="upload-icon">🖼️</span>
+                                        <div class="upload-text">
+                                            <span class="upload-link">Click to upload</span>
+                                            <span> or drag and drop</span>
+                                        </div>
+                                        <p class="upload-hint">PNG, JPG, GIF up to 10MB</p>
+                                    </div>
+                                    <input type="file" id="image-input" accept="image/*" onchange="previewImage(this)">
+                                </div>
+                                <button type="button" class="btn btn-outline upload-btn" onclick="document.getElementById('image-input').click()">
+                                    📤 Upload Image
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">Add Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about-page" class="app-page">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-header">
+                        <h2>About Varnika</h2>
+                        <p class="about-subtitle">
+                            Preserving India's rich heritage of handicrafts while empowering artisans 
+                            and connecting them with art lovers worldwide.
+                        </p>
+                    </div>
+
+                    <!-- Mission Section -->
+                    <div class="mission-section">
+                        <div class="mission-content">
+                            <h3>Our Mission</h3>
+                            <p>
+                                Varnika aims to bridge the gap between traditional Indian artisans and the modern world. 
+                                We believe that every handcrafted piece tells a story of heritage, skill, and passion 
+                                that deserves to be preserved and celebrated.
+                            </p>
+                            <p>
+                                Our platform provides artisans with the tools and reach they need to showcase their 
+                                work to a global audience, while ensuring fair compensation and recognition for their skills.
+                            </p>
+                        </div>
+                        <div class="mission-image">
+                            <img src="https://images.unsplash.com/photo-1632726733402-4a059a476028?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjB0ZXh0aWxlcyUyMGhhbmRpY3JhZnRzfGVufDF8fHx8MTc1NzU3NDkwMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Artisan at work">
+                        </div>
+                    </div>
+
+                    <!-- Values -->
+                    <div class="values-section">
+                        <h3>Our Values</h3>
+                        <div class="values-grid">
+                            <div class="value-card">
+                                <div class="value-icon">🎨</div>
+                                <h4>Authenticity</h4>
+                                <p>We ensure every product is genuinely handcrafted using traditional techniques passed down through generations.</p>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon">🤝</div>
+                                <h4>Fair Trade</h4>
+                                <p>We believe in fair compensation for artisans and transparent pricing that reflects the true value of their work.</p>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon">🌱</div>
+                                <h4>Sustainability</h4>
+                                <p>We promote eco-friendly practices and sustainable materials in all our partnered craftworks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Section -->
+                    <div class="story-section">
+                        <h3>Our Story</h3>
+                        <p>
+                            Varnika was born from a deep appreciation for India's rich tradition of handicrafts. 
+                            Founded in 2024, we started with a simple vision: to create a platform where the 
+                            incredible skill and artistry of Indian craftspeople could reach art lovers around the world.
+                        </p>
+                        <p>
+                            The name "Varnika" comes from the Sanskrit word meaning "colorful" or "painter," 
+                            reflecting our commitment to celebrating the vibrant colors and diverse artistic 
+                            traditions that make Indian handicrafts so special.
+                        </p>
+                    </div>
+
+                    <!-- Impact Numbers -->
+                    <div class="impact-section">
+                        <div class="impact-grid">
+                            <div class="impact-item">
+                                <div class="impact-number">500+</div>
+                                <p>Artisans Supported</p>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-number">2,000+</div>
+                                <p>Products Listed</p>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-number">15+</div>
+                                <p>States Covered</p>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-number">95%</div>
+                                <p>Customer Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="login-title">Welcome Back</h3>
+                <button class="close-btn" onclick="hideLogin()">&times;</button>
+            </div>
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+                <div class="form-footer">
+                    <button type="button" id="toggle-signup" onclick="toggleSignup()">
+                        Don't have an account? Sign up
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
